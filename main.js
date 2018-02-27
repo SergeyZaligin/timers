@@ -1,5 +1,4 @@
-var i = 0;
-var j = 0;
+
 
 var mas1 = ['images/group1/1.jpg', 'images/group1/2.jpg', 'images/group1/3.jpg', 'images/group1/4.jpg'];
 var mas2 = ['images/group2/1.jpg', 'images/group2/2.jpg', 'images/group2/3.jpg', 'images/group2/4.jpg'];
@@ -8,6 +7,10 @@ function tim (){
 	var timer, timer2;
 	clearInterval(timer);
 	clearInterval(timer2);
+	var i = 0;
+	var j = 0;
+
+	
 	timer =	setInterval(function(){
 
 		$('#slide_show').fadeOut(600, function() {   
