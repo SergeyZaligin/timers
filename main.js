@@ -8,15 +8,15 @@ function tim (){
 	clearInterval(timer);
 	clearInterval(timer2);
 	var i = 0;
-	var j = 0;
+	var j = 0; 
 
-	
 	timer =	setInterval(function(){
-
+		console.log('i ====>', i);
+	
 		$('#slide_show').fadeOut(600, function() {   
 		  $(this).attr('src', mas1[i]).fadeIn(600);
-i++;
-
+			i++;
+	
 		if(i > 3){
 
 			clearInterval(timer);
@@ -34,36 +34,15 @@ i++;
 					tim();
 				}
 				});
-				//console.log(mas2[j]);
-				console.log(j);
-				
-				
+					
 			}, 3000);
 		} 
 		});
 		
 		
+
+
 	}, 3000);	
 }
 
 tim();	
-
-
-
-// var n=0;
-// time=800;
-// play=setInterval("chgImg(0)", 5000);
-
-// function chgImg(number) {
-// if (number!=0) n=number-2;
-//  $('#slide_show').fadeOut(time, function() {   
-//   $(this).attr('src', imgs[n]).fadeIn(time);
-//  });
-
-//  $('#slide_text').fadeOut(time, function() {    //для текста
-//   $(this).html(text[n]).fadeIn(time);
-//  });
-
-// n++;
-// if (n>=imgs.length) n=0;
-// }
