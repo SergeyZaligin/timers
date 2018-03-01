@@ -15,32 +15,40 @@ function tim (){
 
 		$('#slide_show').fadeOut(600, function() {   
 		  $(this).attr('src', mas1[i]).fadeIn(600);
-		});
-		console.log(mas1[i]);
-		i++;
+i++;
 
 		if(i > 3){
+
 			clearInterval(timer);
-			i=0;
+
+			i = 0;
+
 			timer2 = setInterval(function(){
 				$('#slide_show').fadeOut(600, function() {   
 				  $(this).attr('src', mas2[j]).fadeIn(600);
-				});
-				console.log(mas2[j]);
-
-				j++;
+				  j++;
 
 				if(j > 3){
 					clearInterval(timer2);
 					j=0;
 					tim();
 				}
+				});
+				//console.log(mas2[j]);
+				console.log(j);
+				
+				
 			}, 3000);
 		} 
+		});
+		
+		
 	}, 3000);	
 }
 
-tim();
+tim();	
+
+
 
 // var n=0;
 // time=800;
