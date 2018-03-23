@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>js</title>
 </head>
+<style>
+	.wrapp {
+		position: relative;
+		width: 200px;
+		height: 200px;
+
+	}
+
+	.group {
+		position: absolute;
+		transform: rotate(90deg);
+		z-index: 9;
+		background: #f3f3f3;
+		bottom: 91px;
+
+	}
+
+	.group1 {
+		left: -90px;
+	}
+
+	.group2 {
+		left: -110px;
+	}
+
+	.group3 {
+		left: -130px;
+	}
+</style>
+
 <body>
-	
-	<div align="center" style="height:220px;" class="active active1">
-		<div>Group1</div>
-		<img src="images/group1/1.jpg" alt="" width="200" height="200" id="slide_show"><br>
-		<div><a href="#">Prev</a><a href="#">Next</a></div>
+
+	<div align="center" style="height:220px;" class="wrapp active active1">
+		<div class="group group1">Group1</div>
+		<div class="group group2">Group2</div>
+		<div class="group group3">Group3</div>
+		<img src="images/group1/1.jpg" alt="" width="200" height="200" id="slide_show">
+		<br>
+		<div>
+			<a href="#">Prev</a>
+			<a href="#">Next</a>
+		</div>
 	</div>
-	
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 	<script src="main.js"></script>
 
 </body>
+
 </html>
