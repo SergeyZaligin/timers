@@ -8,11 +8,16 @@ function tim (){
 	clearInterval(timer);
 	clearInterval(timer2);
 	var i = 0;
-	var j = 0; 
+	var j = 0;
 
-	timer =	setInterval(function(){
+	timer =	setInterval(function() {
+		
 		console.log('i ====>', i);
-	
+		if(i == 0){
+			$('#slide_show').slideUp(600, function() {   
+		  $(this).attr('src', mas1[i]).slideDown(600);
+		});
+		}
 		$('#slide_show').fadeOut(600, function() {   
 		  $(this).attr('src', mas1[i]).fadeIn(600);
 			i++;
@@ -24,6 +29,11 @@ function tim (){
 			i = 0;
 
 			timer2 = setInterval(function(){
+				if(j == 0){
+					$('#slide_show').hide(600, function() {   
+					  $(this).attr('src', mas2[j]).show(600);
+					});
+				}
 				$('#slide_show').fadeOut(600, function() {   
 				  $(this).attr('src', mas2[j]).fadeIn(600);
 				  j++;
@@ -39,9 +49,6 @@ function tim (){
 		} 
 		});
 		
-		
-
-
 	}, 3000);	
 }
 
