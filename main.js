@@ -2,13 +2,16 @@
 
 var mas1 = ['images/group1/1.jpg', 'images/group1/2.jpg', 'images/group1/3.jpg', 'images/group1/4.jpg'];
 var mas2 = ['images/group2/1.jpg', 'images/group2/2.jpg', 'images/group2/3.jpg', 'images/group2/4.jpg'];
+var mas3 = ['images/group3/1.jpg', 'images/group3/2.jpg', 'images/group3/3.jpg', 'images/group3/4.jpg'];
 
 function tim (){
-	var timer, timer2;
+	var timer, timer2, timer3;
 	clearInterval(timer);
 	clearInterval(timer2);
+	clearInterval(timer3);
 	var i = 0;
 	var j = 0;
+	var k = 0;
 
 	timer =	setInterval(function() {
 		
